@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black; 
+}
+
+.container{
+    background-color: rgb(123, 117, 117);
+    width: 350px;
+    height: 450px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0px 12px 12px rgb(113, 112, 111);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease; /*hieu ung chuyen dong*/ 
+}
+
+.container:hover{
+    /*hover de ptu di chuot vao se cuon len*/
+    transform: translateY(-10px); /*de the cuon len*/
+    box-shadow: 0px 3px 15px rgba(253, 252, 252, 0.3); /*tao do bong*/
+}
+
+.img{
+    width: 180px;
+    height: 180px;
+    border: 5px solid rgb(8, 8, 8);
+    border-radius: 50%;
+}
+
+.img:hover{
+    transform: scale(1.1);
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 90%;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 70%;
+}
+
+h1 {
+    font-size: 25px;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    color: lab(17.16% 0.45 0.16);
+}
+
+h2 {
+    font-size: 20px;
+    text-align: center;
+    color: lab(5.28% 0.82 1.45);
+}
+
+p {
+    text-align: center;
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+    color: lab(96.91% -0.01 1.07);
+    
+}
+
+.button{
+    display:flex;/*nam cung 1 hang*/
+    gap: 40px;/*khoang cach deu nhau*/
+}
+
+a{
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border: 10px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+}
+
+a:hover{
+    color: #6556f0;
+    border: 6px solid rgb(240, 237, 237);
+    background-color: rgb(234, 230, 230);
+}
