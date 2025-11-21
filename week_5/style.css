@@ -1,0 +1,354 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+  margin: auto;
+  background-color: white;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    align-items: center;
+    padding-left: 9%;
+    padding-right: 9%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav h1{
+    font-size: 24px;
+    font-weight: 750;
+}
+
+.nav_link{
+    display: flex;
+    gap: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.nav_link a{
+    color: rgb(89, 88, 88);
+    transition: all 0.3s ease;
+}
+
+.nav_search{
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.nav_search button{
+    background-color: rgb(37, 36, 36);
+    border: none;
+    padding: 16px 22px;
+    color: white;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.nav_search i{
+    color:  rgb(45, 44, 44);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#home{
+    color:rgb(17, 143, 193);
+}
+
+#home::after{
+    content: "";
+    position: absolute;
+    bottom: 24px; 
+    left: 50%;
+    width: 3.5%; 
+    height: 3px; 
+    background-color: rgb(20, 150, 202);
+    transform: translateX(-330%);
+}
+
+.t{
+    background-image: url(https://images.pexels.com/photos/691114/pexels-photo-691114.jpeg);
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 88px;
+}
+
+.t h1{
+    font-size: 72px;
+    font-weight: 750;
+    text-align: center;
+    line-height: 1.2;
+    margin-bottom: 28px;
+    margin-top: 60px;
+}
+
+.t p{
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 40px;
+    line-height: 1.5;
+}
+
+.t button{
+    background-color: rgb(49, 107, 200);
+    border: none;
+    padding: 16px 32px;
+    color: rgb(255, 255, 255);
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 80px;
+    transition: all 0.3s ease;
+}
+
+.t1 {
+    display: flex;
+    justify-content: space-around;
+    padding: 80px;
+    padding-left: 10%;
+    padding-right: 10%;
+    align-items: center;
+    background-color: rgba(210, 232, 254, 0.805);
+}
+
+
+.t1_left h4{
+    background-color: rgba(127, 175, 251, 0.368);
+    font-weight: bold;
+    margin-bottom: 4px;
+    width: fit-content;
+    color: rgb(49, 108, 202);
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 16px;
+}
+
+.t1_left h1{
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.t1_left p{
+    width: 480px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.6;
+    color: rgb(94, 92, 92);
+    margin-bottom: 20px;
+}
+
+.t1_left button{
+    border: 1px solid rgb(89, 87, 87);
+    padding: 14px 28px;
+    color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 12px;
+    transition: all 0.3s ease;
+}
+
+.t1_right{
+    padding: 16px;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0px 4px 12px #56565637;
+}
+
+.t1_right ul{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 16px;
+}
+
+.t1_right ul li{
+    display: flex;
+    gap: 30px;
+    padding-right: 320px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid rgba(173, 170, 170, 0.481);
+    align-items: center;
+    transition: all 0.3s ease;
+    padding-left:24px;
+    padding-top: 24px;
+}
+
+#first{
+    padding-top: 18px;
+    padding-bottom:18px ;
+}
+
+#last{
+    border: none;
+}
+
+.t1_right ul li i{
+    font-size: 24px;
+    color: rgb(47, 103, 192);
+}
+
+.t2{
+    display: flex;
+    flex-direction: column;
+    padding-left: 12%;
+    padding-right: 12%;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 100px;
+}
+
+.t2_top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.t2_top div i{
+    font-size: 16px;
+    color: rgb(154, 151, 151);
+    background-color: rgba(138, 136, 136, 0.329);
+    padding: 12px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.t2_top div{
+    display: flex;
+    gap: 10px;
+}
+
+.t2_top h1{
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.t2_bot{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.t2__bot__card{
+    width: 48%;
+    box-shadow: 0px 4px 12px #48484837;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid rgba(169, 169, 169, 0.219);
+    background-color: white;
+}
+
+.t2__bot__card img{
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+.t2__bot__card div{
+    padding: 32px;
+    padding-top: 20px;
+}
+
+.t2__bot__card h4{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.t2__bot__card p{
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(104, 104, 104);
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+.t2__bot__card h5{
+    font-size: 12px;
+    font-weight: 700;
+    color: rgb(77, 77, 77);
+    margin-top: 32px;
+    margin-bottom: 24px;
+}
+
+.t2__bot__card a{
+    border: 1px solid rgba(79, 78, 78, 0.384);
+    padding: 14px 39.73%;
+    color: rgb(37, 37, 37);
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+.nav_search button:hover{
+    background-color: rgb(101, 101, 101);
+}
+
+.nav_link a:hover{
+    color: rgb(17, 142, 191);
+}
+
+.t button:hover{
+    background-color: rgb(66, 160, 188);
+}
+
+.t1_left button:hover{
+    background-color: rgb(6, 6, 6);
+    color: white;
+}
+
+.t1_right ul li:hover{
+    background-color: rgba(225, 223, 223, 0.705);
+}
+
+.t2_top div i:hover{
+    background-color: rgb(5, 145, 226);
+    color: white;
+}
+
+.t2__bot__card a:hover{
+    background-color: rgb(12, 12, 12);
+    color: white;
+}
